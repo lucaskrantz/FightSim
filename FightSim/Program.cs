@@ -12,8 +12,6 @@ Console.WriteLine("Vad heter du?");
 string char1Name = Console.ReadLine();
 
 
-
-
 while (char1HP > 0 && char2HP > 0)
 {
     Console.WriteLine("Rundan har startat");
@@ -61,7 +59,18 @@ else
 }
 
 
-Console.WriteLine("Tryck på valfri tangent för att avsluta");
-Console.ReadKey();
+string ans = Console.ReadLine();
+
+Console.WriteLine("Skriv på 'Exit' för att avsluta spelet.");
+
+if (ans == "Exit")
+{
+    System.Environment.Exit(0);
+}
+
+/* INTE FÄRDIGT */
+Console.WriteLine("Tryck på 'ENTER' för att spela igen");
+
+Console.ReadLine();
 
 
